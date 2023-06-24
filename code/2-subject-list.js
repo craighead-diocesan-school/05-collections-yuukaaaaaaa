@@ -5,6 +5,8 @@
 let subjects = [
   'English',
   'Digital Technology',
+  'Math',
+  'Science',
 ]
 
 function showSubjects() {
@@ -12,15 +14,21 @@ function showSubjects() {
 }
 
 function addSubject() {
-  let newSubject = 'Maths'
 
-  // add a new item to the end of the subjects array
-  subjects.push(newSubject)
+  while(newSubject!= 'stop'){
+    let newSubject = prompt('What subject do you want to add?')
+    subjects.push(newSubject)
+  }
 }
 
-function removeSubject() {
-  let index = 0
+function removeSubject() { 
+  let deleteNumber = prompt('Which subject do you want to delete?')
+  while(deleteNumber != stop){
+  subjects.splice(index, 1)
+  }
+
+  
 
   // remove 1 item at the index position of the subjects array
-  subjects.splice(index, 1)
+  
 }
